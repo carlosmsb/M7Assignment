@@ -6,11 +6,11 @@
 // ADD EMPLOYEE
 form.addEventListener('submit', (e) => {
     // PREVENT FORM SUBMISSION
-
+    e.preventDefault()
     // GET THE VALUES FROM THE TEXT BOXES
-
+    let employees = document.getElementById('employees').value
     // INSERT A NEW ROW AT THE END OF THE EMPLOYEES TABLE
-
+    let row = selectedtable.insertRow()
     // INSERT A CELL FOR EACH ITEM WITHIN THE NEW ROW
 
     // APPEND THE TEXT VALUES AS TEXT NODES WITHIN THE CELLS
